@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickDigest - AI News Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Simplified Dark Mode Toggle (Checkbox in Top-Right Corner) -->
+  <div class="toggle-container">
+    <input type="checkbox" id="themeToggle"> Dark Mode
+  </div>
+
+  <div class="container">
+    <!-- Logo at the Top -->
+    <img src="logo1.jpeg" alt="QuickDigest Logo" class="logo">
+
+    <!-- Enlarged Text Entry Box -->
+    <textarea id="newsInput" placeholder="Enter news text here..."></textarea>
+
+    <!-- Enlarged Summarize Button -->
+    <button id="summarizeButton" onclick="summarizeNews()">🚀 Summarize</button>
+     <button id="listenButton">🔊 Listen</button>
+
+    <div id="summaryOutput"></div>
+  </div>
+
+  <!-- Description Below the Summary -->
+  <div class="description-container">
+    <p class="description">
+      📢 QuickDigest is an AI-powered news summarizer that extracts key points from long articles,
+      allowing you to stay informed quickly and efficiently. Powered by Groq's high-speed AI models,
+      our tool delivers concise, real-time summaries so you never miss important details!
+    </p>
+  </div>
+
+  <!-- Efficiency & Tech Stack Section -->
+  <div class="efficiency-section">
+    <h2>⚡ Why QuickDigest is Efficient & Fast</h2>
+    <p>🔹 Powered by Groq’s ultra-fast AI models, our summarizer ensures near-instant text processing.</p>
+    <p>🔹 Optimized backend built with Flask, ensuring lightweight, scalable performance.</p>
+    <p>🔹 Seamless API integration with robust error handling, making it smooth & reliable.</p>
+    <p>🔹 UI designed with HTML, CSS, and JavaScript for an engaging experience.</p>
+  </div>
+
+  <!-- About Us Section (At the Bottom) -->
+  <div class="about-section">
+    <h2>👥 About Us</h2>
+
+    <div class="team-member">
+      <h3>Vineeth</h3>
+      <p>Email: <a href="mailto:vineeth.24cs181@sode-edu.in" class="highlight">vineeth.24cs181@sode-edu.in</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vineethbhatalevoor0507" class="highlight">Visit Profile</a></p>
+    </div>
+
+    <div class="team-member">
+      <h3>Vishnu Prasad</h3>
+      <p>Email: <a href="mailto:vishnu.24cs182@sode-edu.in" class="highlight">vishnu.24cs182@sode-edu.in</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vishnu-prasad-nayak-4b6333266" class="highlight">Visit Profile</a></p>
+    </div>
+
+    <div class="team-member">
+      <h3>Shreyas S Bhat</h3>
+      <p>Email: <a href="mailto:shreyas.24cs154@sode-edu.in" class="highlight">shreyas.24cs154@sode-edu.in</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shreyas-bhat-313424321" class="highlight">Visit Profile</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</body>
+</html>

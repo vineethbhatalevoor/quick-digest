@@ -1,0 +1,135 @@
+/* Full-Screen Scrolling Background */
+body {
+  background: url('newsbackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content-center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  animation: slowScroll 30s linear infinite; /* Smooth scrolling */
+}
+
+/* Slow Scrolling Animation */
+@keyframes slowScroll {
+  from {
+    background-position: center bottom;
+  }
+  to {
+    background-position: center top; /* Moves background upwards */
+  }
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: black;
+  color: white;
+}
+
+/* Simplified Toggle Button */
+.toggle-container {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Enlarged Container */
+.container {
+  text-align: center;
+  background: white;
+  padding: 50px; /* Extended vertical padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 500px;
+}
+/* Listen Button Animation */
+#listenButton:active {
+  transform: scale(0.95);
+  background-color: #218838;
+}
+
+/* Larger Logo */
+.logo {
+  width: 280px; /* Slightly increased size */
+  margin-bottom: 10px;
+}
+
+/* Enlarged Text Entry */
+textarea {
+  width: 90%;
+  height: 150px; /* More space for input */
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+}
+
+/* Bigger Summarize Button */
+button {
+  margin-top: 15px;
+  padding: 15px 30px; /* Enlarged size */
+  font-size: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* QuickDigest Introduction Padding Fix */
+.description-container {
+  padding: 40px; /* Added proper padding */
+  text-align: center;
+  max-width: 700px;
+  background: rgba(9, 12, 170, 0.648); /* Subtle background effect */
+  border-radius: 8px;
+  color: white;
+}
+
+/* Fixing Dark Mode Summary Output */
+#summaryOutput {
+  margin-top: 20px;
+  padding: 20px;
+  background: white; /* Ensures readability */
+  color: black; /* Text remains visible */
+  border-radius: 8px;
+}
+
+/* Dark Mode - Adjust Summary Output */
+body.dark-mode #summaryOutput {
+  background: #222; /* Darker background */
+  color: white; /* White text for visibility */
+}
+
+/* Highlighted Yellow Links */
+.highlight {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Premium Efficiency Section with Padding */
+.efficiency-section {
+  background-color: navy;
+  color: white;
+  padding: 40px; /* Increased padding */
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 800px;
+}
+
+/* About Us Section with Padding */
+.about-section {
+  background-color: #001f3f;
+  color: white;
+  padding: 40px; /* Increased padding */
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 800px;
+}
